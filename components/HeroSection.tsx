@@ -5,12 +5,12 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden py-32">
       {/* 背景光暈 */}
-      <div className="absolute top-[-5%] right-[-20%] w-[800px] h-[500px] bg-[#8B7AD3] blur-[150px] rounded-[200px] z-0"></div>
-      <div className="absolute bottom-[-100px] left-[-20%] w-[600px] h-[600px] bg-[#8DC99F] blur-[120px] rounded-full z-0"></div>
+      <div className="absolute top-[-5%] right-[-20%] w-[300px] lg:w-[800px] h-[300px] lg:h-[500px] bg-[#8B7AD3] blur-[150px] rounded-[200px] z-0"></div>
+      <div className="absolute bottom-[-100px] left-[-20%] w-[300px] lg:w-[600px] h-[300px] lg:h-[600px] bg-[#8DC99F] blur-[120px] rounded-full z-0"></div>
 
       {/* 內容區塊 */}
       <div className="relative z-10 px-16 max-w-screen-xl mx-auto">
-        <h1 className="text-[72px] font-semibold text-gray-900 font-[Montserrat]">
+        <h1 className="text-[2em] md:text-[3.5em] lg:text-[4.5em] font-semibold text-gray-900 font-[Montserrat]">
           Design that moves <br />
           your business forward
         </h1>
