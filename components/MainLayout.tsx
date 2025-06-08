@@ -24,7 +24,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex flex-1 justify-center">
-              <nav className="flex gap-8 text-base font-semibold font-[Montserrat]">
+              <nav className="flex gap-8 text-base font-[Montserrat] font-semibold">
                 <Link href="#service">Service</Link>
                 <Link href="#gallery">Gallery</Link>
                 <Link href="#process">Process</Link>
@@ -42,7 +42,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
 
         {/* Mobile Menu (overlay dropdown) */}
         {isOpen && (
-          <div className="absolute top-[88px] left-0 w-full bg-white shadow-md flex flex-col items-center py-4 z-50">
+          <div className="absolute top-[88px] left-0 w-full bg-white shadow-md flex flex-col items-center py-4 z-50 font-mont">
             <Link href="#service" className="py-2" onClick={() => setIsOpen(false)}>Service</Link>
             <Link href="#gallery" className="py-2" onClick={() => setIsOpen(false)}>Gallery</Link>
             <Link href="#process" className="py-2" onClick={() => setIsOpen(false)}>Process</Link>
@@ -65,7 +65,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                 Ready to move forward? Let’s talk.
               </p>
               <Link href="mailto:panda061325@gmail.com">
-                <button className="border border-black px-6 py-2 text-base font-medium hover:bg-black hover:text-white transition">
+                <button className="border border-black px-6 py-2 mt-[2px] text-base font-medium font-[Nunito_Sans] hover:bg-black hover:text-white transition">
                   Contact Us
                 </button>
               </Link>
@@ -73,7 +73,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
 
             {/* Right: Logo + Copyright */}
             <div className="flex flex-col items-center lg:items-end text-center lg:text-right">
-              <Image src={LogoFooter} alt="Buni logo" />
+              {/*<Image src={LogoFooter} alt="Buni logo" />*/}
               <p className="text-xs text-neutral-500 mt-2">©2025 Buni Creative Studio</p>
             </div>
           </div>

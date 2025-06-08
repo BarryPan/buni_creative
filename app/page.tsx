@@ -12,12 +12,12 @@ export default function Home() {
       </div>
 
       {/* Service 對應 #service */}
-      <div className="px-4 lg:px-16 border-b" id="service">
+      <div className="px-4 lg:px-16 border-b scroll-mt-[88px]" id="service">
         <ServiceSection />
       </div>
 
       {/* Gallery 對應 #gallery */}
-      <div className="px-4 lg:px-16" id="gallery">
+      <div className="px-4 lg:px-16 scroll-mt-[88px]" id="gallery">
         <GallerySection />
       </div>
     </MainLayout>

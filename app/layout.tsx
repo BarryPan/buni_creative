@@ -11,6 +11,7 @@ const nunito = Nunito_Sans({
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
      <html lang="en" className="scroll-smooth">
       {/* unify text as Nunito_Sans */}
-      <body className={`${nunito.variable} ${montserrat.variable}`}>
+      <body className={`${nunito.variable} ${montserrat.variable} font-sans`}>
         {children}
       </body>
     </html>

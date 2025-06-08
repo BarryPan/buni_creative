@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/montserrat':
+        specifier: ^5.2.6
+        version: 5.2.6
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.1.0)
@@ -55,6 +58,9 @@ packages:
 
   '@emnapi/runtime@1.4.3':
     resolution: {integrity: sha512-pBPWdu6MLKROBX05wSNKcNb++m5Er+KQ9QkB+WVM+pW2Kx9hoSrVTnu3BdkI5eBLZoKu/J6mW/B6i6bJB2ytXQ==}
+
+  '@fontsource/montserrat@5.2.6':
+    resolution: {integrity: sha512-AfFxq1q5tgkOsjQfMFsh95uMXh39VbGOuBLlHLFg16/txv93lqK7Sr6jev0neuJzZy1kqRG16SH6xpUYnk4cZg==}
 
   '@heroicons/react@2.2.0':
     resolution: {integrity: sha512-LMcepvRaS9LYHJGsF0zzmgKCUim/X3N/DQKc4jepAXJ7l8QxJ1PmxJzqplF2Z3FE4PqBAIGyJAQ/w4B5dsqbtQ==}
@@ -609,6 +615,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  '@fontsource/montserrat@5.2.6': {}
 
   '@heroicons/react@2.2.0(react@19.1.0)':
     dependencies:
