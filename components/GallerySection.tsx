@@ -39,8 +39,8 @@ export default function GalleryPage() {
                 className={clsx(
                   "aspect-[72/100]",
                   {
-                    "md:aspect-[152/100]": colSpan === 6,
-                    "md:aspect-[72/100]": colSpan === 3,
+                    "aspect-[152/100]": colSpan === 6,
+                    "aspect-[72/100]": colSpan === 3,
                   },
                   "w-full overflow-hidden bg-gray-200"
                 )}
@@ -53,7 +53,7 @@ export default function GalleryPage() {
               </div>
 
               <div>
-                <p className="text-sm text-[#8B7AD3] p-[2px] font-[Nunito_Sans]">{item.category}</p>
+                <p className="text-sm text-[#8B7AD3] pt-2 font-[Nunito_Sans]">{item.category}</p>
                 <p className="text-[22px] font-[Nunito_Sans]">{item.title}</p>
               </div>
             </div>

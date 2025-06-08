@@ -31,18 +31,18 @@ export default function ServiceSection() {
   ];
 
   return (
-    <div className="pt-[64px] pb-6">
+    <div className="pt-[64px] pb-16">
       <h2 className="text-3xl font-semibold text-gray-800 mb-12 font-[Montserrat]">Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {services.map((service, index) => (
-          <div key={index} className={`${service.bg} aspect-[656/399]`}>
+          <div key={index} className={`${service.bg}`}>
             <p className="px-8 pt-16 mb-8 text-[14px] font-semibold text-[#8B7AD3] tracking-wide font-[Montserrat]">
               {service.category}
             </p>
             <h3 className=" px-8 text-[32px] font-semibold text-gray-900 mb-4 font-[Nunito_Sans]">
               {service.title}
             </h3>
-            <p className="px-8 text-[16px] text-gray-700 font-[Nunito_Sans]">{service.description}</p>
+            <p className="px-8 pb-18 text-[16px] text-gray-700 font-[Nunito_Sans]">{service.description}</p>
           </div>
         ))}
       </div>
