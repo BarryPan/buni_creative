@@ -7,7 +7,7 @@ export default function GalleryPage() {
     <div>
       {/* ✅ Section 標題區塊 */}
       <div className="pt-[64px] pb-6">
-        <h1 className="text-3xl font-bold text-gray-800">Gallery</h1>
+        <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat]">Gallery</h2>
       </div>
 
       {/* ✅ Gallery 排版區塊 */}
@@ -53,8 +53,8 @@ export default function GalleryPage() {
               </div>
 
               <div>
-                <p className="text-sm text-gray-500">{item.category}</p>
-                <p className="text-[22px] text-purple-600 font-semibold">{item.title}</p>
+                <p className="text-sm text-[#8B7AD3] p-[2px] font-[Nunito_Sans]">{item.category}</p>
+                <p className="text-[22px] font-[Nunito_Sans]">{item.title}</p>
               </div>
             </div>
           );
