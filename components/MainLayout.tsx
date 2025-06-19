@@ -25,10 +25,11 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             {/* Desktop Menu */}
             <div className="hidden lg:flex flex-1 justify-center">
               <nav className="flex gap-8 text-base font-[Montserrat] font-semibold">
-                <Link href="#service">Service</Link>
-                <Link href="#gallery">Gallery</Link>
-                <Link href="#process">Process</Link>
-                <Link href="mailto:panda061325@gmail.com">Contact</Link>
+                <Link href="#service" className="px-2 py-1 rounded hover:bg-gray-100 transition">Service</Link>
+                <Link href="#gallery" className="px-2 py-1 rounded hover:bg-gray-100 transition">Work</Link>
+                <Link href="#shapeus" className="px-2 py-1 rounded hover:bg-gray-100 transition">Philosophy</Link>
+                <Link href="#process" className="px-2 py-1 rounded hover:bg-gray-100 transition">Process</Link>
+                <Link href="#contact" className="px-2 py-1 rounded hover:bg-gray-100 transition">Contact</Link>
               </nav>
             </div>
 
@@ -44,7 +45,8 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         {isOpen && (
           <div className="absolute top-[88px] left-0 w-full bg-white shadow-md flex flex-col items-center py-4 z-50 font-mont">
             <Link href="#service" className="py-2" onClick={() => setIsOpen(false)}>Service</Link>
-            <Link href="#gallery" className="py-2" onClick={() => setIsOpen(false)}>Gallery</Link>
+            <Link href="#gallery" className="py-2" onClick={() => setIsOpen(false)}>Work</Link>
+            <Link href="#shapeus" className="py-2" onClick={() => setIsOpen(false)}>Philosophy</Link>
             <Link href="#process" className="py-2" onClick={() => setIsOpen(false)}>Process</Link>
             <Link href="#contact" className="py-2" onClick={() => setIsOpen(false)}>Contact</Link>
           </div>
@@ -56,28 +58,6 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
           {children}
       </main>
 
-      {/* Footer (full width) */}
-      <footer className="border-t mt-20 py-12">
-          <div className="px-4 lg:px-16 flex flex-col lg:flex-row items-center justify-between text-sm text-neutral-700 gap-8">
-            {/* Left: Text + Button */}
-            <div className="text-center lg:text-left">
-              <p className="text-[32px] font-semibold font-[Montserrat] mb-4">
-                Ready to move forward? Let’s talk.
-              </p>
-              <Link href="mailto:panda061325@gmail.com">
-                <button className="border border-black px-6 py-2 mt-[2px] text-base font-medium font-[Nunito_Sans] hover:bg-black hover:text-white transition">
-                  Contact Us
-                </button>
-              </Link>
-            </div>
-
-            {/* Right: Logo + Copyright */}
-            <div className="flex flex-col items-center lg:items-end text-center lg:text-right">
-              {/*<Image src={LogoFooter} alt="Buni logo" />*/}
-              <p className="text-xs text-neutral-500 mt-2">©2025 Buni Creative Studio</p>
-            </div>
-          </div>
-      </footer>
     </div>
   );
 }
