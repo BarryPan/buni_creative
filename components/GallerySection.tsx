@@ -7,7 +7,7 @@ export default function GalleryPage() {
     <div>
       {/* ✅ Section 標題區塊 */}
       <div className="pt-[64px] pb-6">
-        <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat]">Gallery</h2>
+        <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat]">Case Study</h2>
       </div>
 
       {/* ✅ Gallery 排版區塊 */}

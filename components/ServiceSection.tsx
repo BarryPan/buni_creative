@@ -1,51 +1,45 @@
-export default function ServiceSection() {
-  const services = [
-    {
-      category: 'BUSINESS',
-      title: 'Design with business impact in mind.',
-      description:
-        'Translate your vision into practical design strategies that support growth. From brand-aligned websites and digital mockups to on-demand marketing assets, each deliverable is crafted to communicate your value clearly, inspire trust, and drive business momentum.',
-      bg: 'bg-[#FEF7EB]',
-    },
-    {
-      category: 'USER EXPERIENCE',
-      title: 'Craft human-centered digital products.',
-      description:
-        'Design intuitive, scalable UX solutions for websites and products. Translate real user needs into responsive interfaces that work across platforms—ready for development or direct implementation through modern tools.',
-      bg: 'bg-[#EEC0DE]',
-    },
-    {
-      category: 'NARRATIVE',
-      title: 'Shape the voice behind the visuals.',
-      description:
-        'Clarify your brand’s purpose, voice, and point of view. Establish cohesive messaging and visual direction across platforms to ensure consistency across marketing, product, and communication touch points.',
-      bg: 'bg-[#8DC99F]',
-    },
-    {
-      category: 'IDENTITY',
-      title: 'Create a brand that works everywhere.',
-      description:
-        'Develop a flexible identity system—logo, color palette, typography, and layouts—designed to scale across digital and physical applications. From packaging to pitch decks, ensure everything your audience sees is aligned, expressive, and unmistakably yours.',
-      bg: 'bg-[#D9D3F7]',
-    },
-  ];
+import ServiceCard from "./ServiceCard";
+import Image from "next/image";
 
+export default function ServiceSection() {
   return (
-    <div className="pt-[64px] pb-16">
-      <h2 className="text-3xl font-semibold text-gray-800 mb-12 font-[Montserrat]">Services</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {services.map((service, index) => (
-          <div key={index} className={`${service.bg}`}>
-            <p className="px-8 pt-16 mb-8 text-[14px] font-semibold text-[#8B7AD3] tracking-wide font-[Montserrat]">
-              {service.category}
-            </p>
-            <h3 className=" px-8 text-[32px] font-semibold text-gray-900 mb-4 font-[Nunito_Sans]">
-              {service.title}
-            </h3>
-            <p className="px-8 pb-18 text-[16px] text-gray-700 font-[Nunito_Sans]">{service.description}</p>
-          </div>
-        ))}
+    <section className="pb-6">
+      <div className="pt-[64px] pb-6">
+        <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat]">What We Help With</h2>
       </div>
-    </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3">
+        <ServiceCard
+          icon={<Image src="/icon/Puzzle.svg" alt="" width={96} height={96} />}
+          title="Clarify Your Brand"
+          description="When your brand feels scattered or no longer reflects who you are, we help you reposition it."
+          detail="Through strategy, design, and storytelling, we shape identities that resonate across every touchpoint, digital and beyond."
+          items={["Branding strategy", "Visual Creation"]}
+          bgColor="bg-[#FEF7EB]"
+          iconColor="#D9D3F7"
+          />
+        <ServiceCard
+          icon={<Image src="/icon/Picture.svg" alt="" width={96} height={96} />}
+          title="Craft Digital Solutions"
+          description="Outdated systems and disconnected tools can create barriers between you and your audience."
+          detail="We help identify the problem, design the right solution — whether it's a website, a platform, an internal tool - built to move your business forward."
+          items={["UX/UI design", "Website & Product design", "Technical implementation"]}
+          bgColor="bg-[#D9D3F7]"
+          iconColor="#8DC99F"
+
+        />
+        <ServiceCard
+          icon={<Image src="/icon/Gears.svg" alt="" width={96} height={96} />}
+          title="Maintain and Evolve"
+          description="Your digital presence doesn’t end at launch. We help you maintain, adapt, and extend what you’ve built."
+          detail="From performance and analytics to branded content and digital campaigns that keep your presence consistent and evolving."
+          items={["Technical maintenance", "Analytics & performance tuning", "Digital marketing"]}
+          bgColor="bg-[#EEC0DE]"
+          iconColor="#FEF7EB"
+
+
+        />
+      </div>
+    </section>
   );
 }
