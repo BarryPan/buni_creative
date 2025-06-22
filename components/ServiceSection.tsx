@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function ServiceSection() {
   return (
-    <section className="pb-[64px] md:pb-[120px]">
-      <div className="pt-[64px] pb-[32px]">
+    <section className="pt-[64px] pb-[64px] md:pb-[120px]">
+      <div className="pb-[32px]">
         <h2 className="text-[28px] md:text-[32px] font-semibold text-gray-800 font-[Montserrat]">What We Help With</h2>
       </div>
 

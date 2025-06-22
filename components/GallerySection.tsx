@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function GalleryPage() {
   return (
-    <div className="pt-[64px] md:pt-[136px]">
+    <div className="pt-[64px] pb-[64px] md:pb-[80px]">
       {/* ✅ Section 標題區塊 */}
       <div className="pb-[64px] md:pb-[80px]">
         <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat]">Featured Work</h2>
@@ -13,15 +13,9 @@ export default function GalleryPage() {
       {/* ✅ Gallery 排版區塊 */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-12">
         {galleryItems.map((item, index) => {
-          const rowIndex = Math.floor(index / 3);
-          const positionInRow = index % 3;
+      
 
-          let colSpan = 4;
-          if (rowIndex % 2 === 0) {
-            colSpan = positionInRow === 0 ? 6 : 3;
-          } else {
-            colSpan = positionInRow === 2 ? 6 : 3;
-          }
+          const colSpan = index % 3 === 0 ? 6 : 3;
 
           return (
             <div
