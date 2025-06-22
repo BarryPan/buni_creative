@@ -2,7 +2,7 @@ import CardB from "./CardB";
 
 export default function CardBSection() {
   return (
-    <div>
+    <div className="pb-[72px]">
       <CardB
         icon={
           <svg width="67" height="99" viewBox="0 0 67 99" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -2,12 +2,12 @@ import BuniItem from "./BuniItem";
 
 export default function WhatShapesUsSection() {
   return (
-    <section className="pt-[64px] md:pt-[80px]">
+    <section className="pt-[64px]">
       <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat] pb-6">What Shapes Us</h2>
 
-      <div className="flex flex-col md:flex-row gap-[200px]">
+      <div className="flex flex-col md:flex-row gap-[16%]">
         {/* 左側綠色方塊 */}
-        <div className="hidden md:flex flex-grow items-end justify-center">
+        <div className="hidden lg:flex flex-grow items-end justify-center">
           <div className="aspect-[420/501] w-full max-w-[420px]">
             <img
               src='/Shape Us.png'
@@ -18,7 +18,7 @@ export default function WhatShapesUsSection() {
         </div>  
 
         {/* 右側 BUNI 區塊 */}
-        <div className="w-full md:w-[60%] flex flex-col gap-[64px] md:gap-[114px]">
+        <div className="w-full lg:w-[60%] flex flex-col gap-[64px] md:gap-[114px]">
           <BuniItem
             letter="B"
             title="Business"
