@@ -29,12 +29,12 @@ export default function ProcessSection() {
   ];
 
   return (
-    <section className="pt-[64px] pb-6 py-20">
-      <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat] pb-6">
+    <section className="pt-[64px] md:pt-[80px] pb-[144px]">
+      <h2 className="text-[28px] md:text-[32px] font-semibold text-gray-800 font-[Montserrat] pb-[72px]">
         Working Together
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 pt-[50px] pb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[85px] md:gap-0 pt-[50px]">
         {steps.map((step) => (
           <ProcessStep
             key={step.number}

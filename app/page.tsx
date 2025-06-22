@@ -16,27 +16,27 @@ export default function Home() {
       </div>
 
       {/* Service #service */}
-      <div className="px-4 lg:px-16 scroll-mt-[88px]" id="service">
+      <div className="px-[24px] lg:px-[80px] scroll-mt-[88px]" id="service">
         <ServiceSection />
       </div>
 
       {/* slogan */}
-      <div className="px-4 lg:px-16 scroll-mt-[88px]">
+      <div className="px-[24px] lg:px-[80px] scroll-mt-[88px]">
         <MidsloganSection />
       </div>
       
       {/* Gallery #gallery */}
-      <div className="px-4 lg:px-16 scroll-mt-[88px]" id="gallery">
+      <div className="px-[24px] lg:px-[80px] scroll-mt-[88px]" id="gallery">
         <GallerySection />
       </div>
 
       {/* ShapesUs #shapeus */}
-      <div className="px-4 lg:px-16 scroll-mt-[88px]" id="shapeus">
+      <div className="px-[24px] lg:px-[80px] scroll-mt-[88px]" id="shapeus">
         <WhatShapeUsSection />
       </div>
 
       {/* Process #process */}
-      <div className="px-4 lg:px-16 scroll-mt-[88px]" id="process">
+      <div className="px-[24px] lg:px-[80px] scroll-mt-[88px]" id="process">
         <ProcessSection />
       </div>
 
