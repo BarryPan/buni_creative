@@ -25,7 +25,7 @@ export default function BuniItem({
 
       {/* 右側內容區塊 */}
     <div className="flex-1">
-        <h4 className="text-[28px] font-semibold text-gray-900">{title}</h4>
+        <h4 className="text-[24px] md:text-[28px] font-semibold text-gray-900">{title}</h4>
         <p className="text-[16px] text-gray-700 mt-2 leading-relaxed">{description}</p>
       </div>
     </div>

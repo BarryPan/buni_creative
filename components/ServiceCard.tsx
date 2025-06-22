@@ -18,14 +18,14 @@ export default function ServiceCard({
   iconColor,
 }: ServiceCardProps) {
   return (
-    <div className={`px-[48px] pt-[48px] pb-[72px] ${bgColor}`}>
+    <div className={`px-[24px] md:px-[48px] pt-[48px] pb-[72px] ${bgColor}`}>
       <div className="mb-6">{icon}</div>
-      <h3 className="text-[28px] text-[#312F37] font-semibold mb-2">{title}</h3>
-      <p className="text-[#312F37] text-[16px] text-[#312F37]">{description}</p>
-      <p className="text-[#312F37] text-[16px] mt-2">{detail}</p>
+      <h3 className="pb-[16px] text-[24px] md:text-[28px] text-[#312F37] font-semibold mb-2">{title}</h3>
+      <p className="pb-[12px] text-[#312F37] text-[16px] text-[#312F37]">{description}</p>
+      <p className="pb-[40px] text-[#312F37] text-[16px] mt-2">{detail}</p>
       <ul className="mt-4 space-y-2">
         {items.map((item, idx) => (
-          <li key={idx} className="flex items-center gap-2 text-sm text-gray-800">
+          <li key={idx} className="flex items-center gap-2 text-sm text-gray-800 pb-[16px]">
             <span className="text-green-600 text-base">
              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24 14.5C24 19.7467 19.7467 24 14.5 24C9.25329 24 5 19.7467 5 14.5C5 9.25329 9.25329 5 14.5 5C19.7467 5 24 9.25329 24 14.5Z" fill={iconColor}/>

@@ -7,6 +7,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Buni Creative Studio",
   description: "Build User Need",
+  icons: {
+    icon: 'favicon.ico',
+  },
 };
 
 export default function RootLayout({

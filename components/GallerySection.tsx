@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 export default function GalleryPage() {
   return (
-    <div>
+    <div className="pt-[64px] md:pt-[136px]">
       {/* ✅ Section 標題區塊 */}
-      <div className="pt-[64px] pb-6">
-        <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat]">Case Study</h2>
+      <div className="pb-[64px] md:pb-[80px]">
+        <h2 className="text-[32px] font-semibold text-gray-800 font-[Montserrat]">Featured Work</h2>
       </div>
 
       {/* ✅ Gallery 排版區塊 */}
@@ -53,8 +53,8 @@ export default function GalleryPage() {
               </div>
 
               <div>
-                <p className="text-sm text-[#8B7AD3] pt-2 font-[Nunito_Sans]">{item.category}</p>
-                <p className="text-[22px] font-[Nunito_Sans]">{item.title}</p>
+                <p className="text-sm text-[#8B7AD3] pt-2 pb-[4px]">{item.category}</p>
+                <p className="text-[22px] font-semibold">{item.title}</p>
               </div>
             </div>
           );

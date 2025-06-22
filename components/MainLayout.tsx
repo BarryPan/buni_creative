@@ -23,7 +23,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:flex flex-1 justify-center">
+            <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2">
               <nav className="flex gap-8 text-base font-[Montserrat] font-semibold">
                 <Link href="#service" className="px-2 py-1 rounded hover:bg-gray-100 transition">Service</Link>
                 <Link href="#gallery" className="px-2 py-1 rounded hover:bg-gray-100 transition">Work</Link>
